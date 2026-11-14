@@ -1,0 +1,34 @@
+{
+  "fields": {
+    "id": {
+      "type": "id"
+    },
+    "name": {
+      "type": "string",
+      "prefix": "person-",
+      "length": 6
+    },
+    "age": {
+      "type": "integer",
+      "min": 18,
+      "max": 80
+    },
+    "email": {
+      "type": "email"
+    },
+    "plan": {
+      "type": "choice",
+      "choices": [
+        "free",
+        "pro",
+        "team"
+      ]
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "joined": {
+      "type": "date"
+    }
+  }
+}
